@@ -7,7 +7,11 @@ import com.dragrise96.dragrisemisc.blocks.CypressPlank;
 import com.dragrise96.dragrisemisc.items.ItemBase;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.color.BlockColors;
+import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.item.Item;
+import net.minecraft.world.biome.BiomeColors;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,12 +22,6 @@ public class RegistryHandler {
 	
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, ModInfo.MOD_ID);
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, ModInfo.MOD_ID);
-	
-	
-	public static void Init() {
-		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
 	
 	//items
 	public static final RegistryObject<Item> CYPRESS_STICK = ITEMS.register("cypress_stick", ItemBase::new);
@@ -37,4 +35,16 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> CYPRESS_LOG_BLOCK_ITEM = ITEMS.register("cypress_log", () -> new BlockItemBase(CYPRESS_LOG_BLOCK.get()));
 	public static final RegistryObject<Item> CYPRESS_PLANK_BLOCK_ITEM = ITEMS.register("cypress_plank", () -> new BlockItemBase(CYPRESS_PLANK_BLOCK.get()));
 	public static final RegistryObject<Item> CYPRESS_LEAF_BLOCK_ITEM = ITEMS.register("cypress_leaf", () -> new BlockItemBase(CYPRESS_LEAF_BLOCK.get()));
+
+	public static final IBlockColor blockColorsHandler = (blockState, lightReader, blockPos, tintIndex) -> {
+		return BiomeColors.getFoliageColor(lightReader, blockPos);
+	};
+	
+	public static void Init() {
+		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+		
+		BlockColors blockColors = Minecraft.getInstance().getBlockColors();
+		blockColors.register(blockColorsHandler, CYPRESS_LEAF_BLOCK.get());
+	}
 }
