@@ -1,4 +1,7 @@
 {
     "itemGroup.dragrisemisc": "Dragrise Misc",
+    "block.dragrisemisc.cypress_log": "Cypress Log",
+    "block.dragrisemisc.cypress_plank": "Cypress Plank",
+    "block.dragrisemisc.cypress_leaf": "Cypress Leaf",
     "item.dragrisemisc.cypress_stick": "Cypress Stick"
 }

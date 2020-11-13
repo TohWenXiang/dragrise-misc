@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+      "all": "dragrisemisc:blocks/cypress_leaf"
+    }
+}
