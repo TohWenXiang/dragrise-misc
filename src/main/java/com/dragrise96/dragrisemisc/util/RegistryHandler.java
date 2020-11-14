@@ -7,11 +7,7 @@ import com.dragrise96.dragrisemisc.blocks.CypressPlank;
 import com.dragrise96.dragrisemisc.items.ItemBase;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.color.BlockColors;
-import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.item.Item;
-import net.minecraft.world.biome.BiomeColors;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
