@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "dragrisemisc:block/cypress_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "dragrisemisc:block/cypress_log"
+    },
+    "axis=z": {
+      "model": "dragrisemisc:block/cypress_log",
+      "x": 90
+    }
+  }
+}
