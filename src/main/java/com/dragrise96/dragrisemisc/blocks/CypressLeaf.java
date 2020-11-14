@@ -12,9 +12,9 @@ public class CypressLeaf extends LeavesBlock{
 		super(Block.Properties.create(Material.LEAVES)
 				.hardnessAndResistance(2.0f)
 				.sound(SoundType.PLANT)
-				.harvestLevel(0)
-				.harvestTool(ToolType.AXE)
+				.tickRandomly()
 				.notSolid());
 	}
 
+	
 }

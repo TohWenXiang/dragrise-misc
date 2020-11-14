@@ -35,16 +35,10 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> CYPRESS_LOG_BLOCK_ITEM = ITEMS.register("cypress_log", () -> new BlockItemBase(CYPRESS_LOG_BLOCK.get()));
 	public static final RegistryObject<Item> CYPRESS_PLANK_BLOCK_ITEM = ITEMS.register("cypress_plank", () -> new BlockItemBase(CYPRESS_PLANK_BLOCK.get()));
 	public static final RegistryObject<Item> CYPRESS_LEAF_BLOCK_ITEM = ITEMS.register("cypress_leaf", () -> new BlockItemBase(CYPRESS_LEAF_BLOCK.get()));
-
-	public static final IBlockColor blockColorsHandler = (blockState, lightReader, blockPos, tintIndex) -> {
-		return BiomeColors.getFoliageColor(lightReader, blockPos);
-	};
 	
-	public static void Init() {
+	public static void init() {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		
-		BlockColors blockColors = Minecraft.getInstance().getBlockColors();
-		blockColors.register(blockColorsHandler, CYPRESS_LEAF_BLOCK.get());
 	}
+	
 }
