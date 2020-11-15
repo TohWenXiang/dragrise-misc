@@ -3,7 +3,7 @@ package com.dragrise96.dragrisemisc;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.dragrise96.dragrisemisc.util.ModInfo;
+import com.dragrise96.dragrisemisc.util.CommonConstants;
 import com.dragrise96.dragrisemisc.util.RegistryHandler;
 
 import net.minecraft.client.Minecraft;
@@ -18,7 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(ModInfo.MOD_ID)
+@Mod(CommonConstants.MOD_ID)
 public class DragriseMisc {
 	private static final Logger LOGGER = LogManager.getLogger();
 
@@ -50,7 +50,7 @@ public class DragriseMisc {
 //		}, RegistryHandler.CYPRESS_LEAF_BLOCK_ITEM.get());
 	}
 
-	public static final ItemGroup TAB = new ItemGroup(ModInfo.MOD_ID) {
+	public static final ItemGroup TAB = new ItemGroup(CommonConstants.MOD_ID) {
 
 		@Override
 		public ItemStack createIcon() {
