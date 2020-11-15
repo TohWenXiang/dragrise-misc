@@ -1,4 +1,4 @@
-package com.dragrise96.dragrisemisc.blocks;
+package com.dragrise96.dragrisemisc.blockitems;
 
 import com.dragrise96.dragrisemisc.DragriseMisc;
 
