@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sticks",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "dragrisemisc:cypress_plank"
+    }
+  },
+  "result": {
+    "item": "dragrisemisc:cypress_stick",
+    "count": 4
+  }
+}
