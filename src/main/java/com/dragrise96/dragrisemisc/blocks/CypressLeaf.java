@@ -10,11 +10,10 @@ public class CypressLeaf extends LeavesBlock{
 
 	public CypressLeaf() {
 		super(Block.Properties.create(Material.LEAVES)
-				.hardnessAndResistance(2.0f)
-				.sound(SoundType.PLANT)
+				.hardnessAndResistance(0.2F)
 				.tickRandomly()
+				.sound(SoundType.PLANT)
 				.notSolid());
 	}
 
-	
 }
