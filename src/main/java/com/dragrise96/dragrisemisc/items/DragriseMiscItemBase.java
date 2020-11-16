@@ -4,9 +4,9 @@ import com.dragrise96.dragrisemisc.DragriseMisc;
 
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item {
+public class DragriseMiscItemBase extends Item {
 
-	public ItemBase() {
+	public DragriseMiscItemBase() {
 		super(new Item.Properties().group(DragriseMisc.TAB));
 	}
 

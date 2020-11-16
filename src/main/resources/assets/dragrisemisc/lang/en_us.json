@@ -6,5 +6,15 @@
     "block.dragrisemisc.solarium_ore": "Solarium Ore",
     "item.dragrisemisc.cypress_stick": "Cypress Stick",
     "item.dragrisemisc.solarium_ingot": "Solarium Ingot",
-    "item.dragrisemisc.solarium_gem": "Solarium Gem"
+    "item.dragrisemisc.solarium_gem": "Solarium Gem",
+    "item.dragrisemisc.cypress_sword": "Cypress Sword",
+    "item.dragrisemisc.cypress_axe": "Cypress Axe",
+    "item.dragrisemisc.cypress_pickaxe": "Cypress Pickaxe",
+    "item.dragrisemisc.cypress_shovel": "Cypress Shovel",
+    "item.dragrisemisc.cypress_hoe": "Cypress Hoe",
+    "item.dragrisemisc.solarium_sword": "Solarium Sword",
+    "item.dragrisemisc.solarium_axe": "Solarium Axe",
+    "item.dragrisemisc.solarium_pickaxe": "Solarium Pickaxe",
+    "item.dragrisemisc.solarium_shovel": "Solarium Shovel",
+    "item.dragrisemisc.solarium_hoe": "Solarium Hoe"
 }

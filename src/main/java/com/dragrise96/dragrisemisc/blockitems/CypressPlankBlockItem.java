@@ -3,7 +3,7 @@ package com.dragrise96.dragrisemisc.blockitems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 
-public class CypressPlankBlockItem extends BlockItemBase {
+public class CypressPlankBlockItem extends DragriseMiscBlockItemBase {
 
 	public CypressPlankBlockItem(Block block) {
 		super(block);
