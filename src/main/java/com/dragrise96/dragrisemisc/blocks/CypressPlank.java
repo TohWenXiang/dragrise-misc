@@ -1,6 +1,6 @@
 package com.dragrise96.dragrisemisc.blocks;
 
-import com.dragrise96.dragrisemisc.util.CommonConstants;
+import com.dragrise96.dragrisemisc.util.HarvestLevel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -12,7 +12,7 @@ public class CypressPlank extends Block {
 	public CypressPlank() {
 		super(Block.Properties.create(Material.WOOD)
 				.hardnessAndResistance(2.0F, 3.0F)
-				.harvestLevel(CommonConstants.HARVEST_LEVEL_WOOD)
+				.harvestLevel(HarvestLevel.WOOD.getHarvestLevel())
 				.harvestTool(ToolType.AXE)
 				.sound(SoundType.WOOD));
 	}

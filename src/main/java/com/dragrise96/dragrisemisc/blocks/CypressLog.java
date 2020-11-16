@@ -1,6 +1,6 @@
 package com.dragrise96.dragrisemisc.blocks;
 
-import com.dragrise96.dragrisemisc.util.CommonConstants;
+import com.dragrise96.dragrisemisc.util.HarvestLevel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.LogBlock;
@@ -14,7 +14,7 @@ public class CypressLog extends LogBlock{
 	public CypressLog() {
 		super(MaterialColor.WOOD, Block.Properties.create(Material.WOOD)
 				.hardnessAndResistance(2.0f)
-				.harvestLevel(CommonConstants.HARVEST_LEVEL_WOOD)
+				.harvestLevel(HarvestLevel.WOOD.getHarvestLevel())
 				.harvestTool(ToolType.AXE)
 				.sound(SoundType.WOOD));
 	}
