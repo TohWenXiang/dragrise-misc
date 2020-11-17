@@ -9,6 +9,7 @@ import com.dragrise96.dragrisemisc.blocks.CypressLeaf;
 import com.dragrise96.dragrisemisc.blocks.CypressLog;
 import com.dragrise96.dragrisemisc.blocks.CypressPlank;
 import com.dragrise96.dragrisemisc.blocks.SolariumOre;
+import com.dragrise96.dragrisemisc.items.CypressFruit;
 import com.dragrise96.dragrisemisc.items.CypressStick;
 import com.dragrise96.dragrisemisc.items.DragriseMiscItemBase;
 import com.dragrise96.dragrisemisc.tools.DragriseMiscItemTier;
@@ -37,6 +38,9 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> SOLARIUM_INGOT = ITEMS.register("solarium_ingot",
 			DragriseMiscItemBase::new);
 	public static final RegistryObject<Item> SOLARIUM_GEM = ITEMS.register("solarium_gem", DragriseMiscItemBase::new);
+
+	// food item
+	public static final RegistryObject<CypressFruit> CYPRESS_FRUIT = ITEMS.register("cypress_fruit", CypressFruit::new);
 
 	// tools
 	// actual attack damage = (base damage (1) + item tier attack damage(1) + added
