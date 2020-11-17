@@ -16,5 +16,9 @@
     "item.dragrisemisc.solarium_axe": "Solarium Axe",
     "item.dragrisemisc.solarium_pickaxe": "Solarium Pickaxe",
     "item.dragrisemisc.solarium_shovel": "Solarium Shovel",
-    "item.dragrisemisc.solarium_hoe": "Solarium Hoe"
+    "item.dragrisemisc.solarium_hoe": "Solarium Hoe",
+    "item.dragrisemisc.solarium_helmet": "Solarium Helmet",
+    "item.dragrisemisc.solarium_chestplate": "Solarium ChestPlate",
+    "item.dragrisemisc.solarium_leggings": "Solarium Leggings",
+    "item.dragrisemisc.solarium_boots": "Solarium Boots"
 }
