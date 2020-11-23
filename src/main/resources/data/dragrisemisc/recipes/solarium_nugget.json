@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dragrisemisc:solarium_ingot"
+    }
+  ],
+  "result": {
+    "item": "dragrisemisc:solarium_nugget",
+    "count": 9
+  }
+}

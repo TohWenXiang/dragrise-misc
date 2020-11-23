@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "solarium_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "dragrisemisc:solarium_nugget"
+    }
+  },
+  "result": {
+    "item": "dragrisemisc:solarium_ingot"
+  }
+}
