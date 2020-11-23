@@ -8,6 +8,7 @@ import com.dragrise96.dragrisemisc.blockitems.DragriseMiscBlockItemBase;
 import com.dragrise96.dragrisemisc.blocks.CypressLeaf;
 import com.dragrise96.dragrisemisc.blocks.CypressLog;
 import com.dragrise96.dragrisemisc.blocks.CypressPlank;
+import com.dragrise96.dragrisemisc.blocks.SolariumBlock;
 import com.dragrise96.dragrisemisc.blocks.SolariumOre;
 import com.dragrise96.dragrisemisc.items.CypressFruit;
 import com.dragrise96.dragrisemisc.items.CypressStick;
@@ -38,6 +39,7 @@ public class RegistryHandler {
 	public static final RegistryObject<Item> SOLARIUM_INGOT = ITEMS.register("solarium_ingot",
 			DragriseMiscItemBase::new);
 	public static final RegistryObject<Item> SOLARIUM_GEM = ITEMS.register("solarium_gem", DragriseMiscItemBase::new);
+	public static final RegistryObject<Item> SOLARIUM_NUGGET = ITEMS.register("solarium_nugget", DragriseMiscItemBase::new);
 
 	// food item
 	public static final RegistryObject<CypressFruit> CYPRESS_FRUIT = ITEMS.register("cypress_fruit", CypressFruit::new);
@@ -94,6 +96,7 @@ public class RegistryHandler {
 	public static final RegistryObject<Block> CYPRESS_PLANK_BLOCK = BLOCKS.register("cypress_plank", CypressPlank::new);
 	public static final RegistryObject<Block> CYPRESS_LEAF_BLOCK = BLOCKS.register("cypress_leaf", CypressLeaf::new);
 	public static final RegistryObject<Block> SOLARIUM_ORE_BLOCK = BLOCKS.register("solarium_ore", SolariumOre::new);
+	public static final RegistryObject<Block> SOLARIUM_BLOCK = BLOCKS.register("solarium_block", SolariumBlock::new);
 
 	// block items
 	public static final RegistryObject<Item> CYPRESS_LOG_BLOCK_ITEM = ITEMS.register("cypress_log",
@@ -104,6 +107,8 @@ public class RegistryHandler {
 			() -> new DragriseMiscBlockItemBase(CYPRESS_LEAF_BLOCK.get()));
 	public static final RegistryObject<Item> SOLARIUM_ORE_BLOCK_ITEM = ITEMS.register("solarium_ore",
 			() -> new DragriseMiscBlockItemBase(SOLARIUM_ORE_BLOCK.get()));
+	public static final RegistryObject<Item> SOLARIUM_BLOCK_ITEM = ITEMS.register("solarium_block",
+			() -> new DragriseMiscBlockItemBase(SOLARIUM_BLOCK.get()));
 
 	public static void init() {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

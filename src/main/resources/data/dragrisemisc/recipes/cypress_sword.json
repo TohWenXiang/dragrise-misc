@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "dragrisemisc:cypress_stick"
+    },
+    "X": {
+      "item": "dragrisemisc:cypress_plank"
+    }
+  },
+  "result": {
+    "item": "dragrisemisc:cypress_sword"
+  }
+}

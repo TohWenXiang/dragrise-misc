@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": [
+    {
+      "item": "dragrisemisc:solarium_pickaxe"
+    },
+    {
+      "item": "dragrisemisc:solarium_shovel"
+    },
+    {
+      "item": "dragrisemisc:solarium_axe"
+    },
+    {
+      "item": "dragrisemisc:solarium_hoe"
+    },
+    {
+      "item": "dragrisemisc:solarium_sword"
+    },
+    {
+      "item": "dragrisemisc:solarium_helmet"
+    },
+    {
+      "item": "dragrisemisc:solarium_chestplate"
+    },
+    {
+      "item": "dragrisemisc:solarium_leggings"
+    },
+    {
+      "item": "dragrisemisc:solarium_boots"
+    }
+  ],
+  "result": "dragrisemisc:solarium_nugget",
+  "experience": 0.1,
+  "cookingtime": 100
+}
