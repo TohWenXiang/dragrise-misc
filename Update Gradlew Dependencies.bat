@@ -1,1 +1,2 @@
-gradlew eclipse --refresh-dependencies
+CALL gradlew clean
+CALL gradlew eclipse --refresh-dependencies

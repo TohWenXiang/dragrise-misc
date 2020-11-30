@@ -18,7 +18,7 @@ public enum DragriseMiscArmorMaterial implements IArmorMaterial {
 	SOLARIUM(ModInfo.MOD_ID + ":solarium", 20, new int[] { 2, 5, 6, 2 }, 18, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
 			() -> {
 				return Ingredient.fromItems(RegistryHandler.SOLARIUM_INGOT.get());
-			});
+			}, 1);
 
 	private static final int[] MAX_DAMAGE_ARRAY = new int[] { 11, 16, 15, 13 };
 	private final String name;
@@ -28,9 +28,10 @@ public enum DragriseMiscArmorMaterial implements IArmorMaterial {
 	private final SoundEvent soundEvent;
 	private final float toughness;
 	private final Supplier<Ingredient> repairMaterial;
+	private final float knockbackResist;
 
 	DragriseMiscArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability,
-			SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+			SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial, float knockbackResist) {
 		this.name = name;
 		this.maxDamageFactor = maxDamageFactor;
 		this.damageReductionAmountArray = damageReductionAmountArray;
@@ -38,6 +39,7 @@ public enum DragriseMiscArmorMaterial implements IArmorMaterial {
 		this.soundEvent = soundEvent;
 		this.toughness = toughness;
 		this.repairMaterial = repairMaterial;
+		this.knockbackResist = knockbackResist;
 	}
 
 	@Override
@@ -74,6 +76,12 @@ public enum DragriseMiscArmorMaterial implements IArmorMaterial {
 	@Override
 	public float getToughness() {
 		return this.toughness;
+	}
+
+	//knockback resistence value
+	@Override
+	public float func_230304_f_() {
+		return this.knockbackResist;
 	}
 
 }

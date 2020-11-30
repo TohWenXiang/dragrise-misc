@@ -14,6 +14,7 @@ public class CypressPlank extends Block {
 				.hardnessAndResistance(2.0F, 3.0F)
 				.harvestLevel(HarvestLevel.WOOD.getHarvestLevel())
 				.harvestTool(ToolType.AXE)
+				.setRequiresTool()
 				.sound(SoundType.WOOD));
 	}
 

@@ -31,8 +31,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
 
-	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, ModInfo.MOD_ID);
-	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, ModInfo.MOD_ID);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModInfo.MOD_ID);
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModInfo.MOD_ID);
 
 	// items
 	public static final RegistryObject<Item> CYPRESS_STICK = ITEMS.register("cypress_stick", CypressStick::new);
@@ -60,7 +60,7 @@ public class RegistryHandler {
 			() -> new ShovelItem(DragriseMiscItemTier.CYPRESS, 1.5F, -3.0F,
 					new Item.Properties().group(DragriseMisc.TAB)));
 	public static final RegistryObject<HoeItem> CYPRESS_HOE = ITEMS.register("cypress_hoe",
-			() -> new HoeItem(DragriseMiscItemTier.CYPRESS, -3.0F, new Item.Properties().group(DragriseMisc.TAB)));
+			() -> new HoeItem(DragriseMiscItemTier.CYPRESS, -3, -3.0F, new Item.Properties().group(DragriseMisc.TAB)));
 
 	public static final RegistryObject<SwordItem> SOLARIUM_SWORD = ITEMS.register("solarium_sword",
 			() -> new SwordItem(DragriseMiscItemTier.SOLARIUM, 3, -2.4F,
@@ -75,7 +75,7 @@ public class RegistryHandler {
 			() -> new ShovelItem(DragriseMiscItemTier.SOLARIUM, 1.5F, -3.0F,
 					new Item.Properties().group(DragriseMisc.TAB)));
 	public static final RegistryObject<HoeItem> SOLARIUM_HOE = ITEMS.register("solarium_hoe",
-			() -> new HoeItem(DragriseMiscItemTier.SOLARIUM, -1.0F, new Item.Properties().group(DragriseMisc.TAB)));
+			() -> new HoeItem(DragriseMiscItemTier.SOLARIUM, -3, -1.0F, new Item.Properties().group(DragriseMisc.TAB)));
 
 	// armor
 	public static final RegistryObject<ArmorItem> SOLARIUM_HELMET = ITEMS.register("solarium_helmet",

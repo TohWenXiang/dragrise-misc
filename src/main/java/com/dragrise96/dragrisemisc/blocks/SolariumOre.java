@@ -13,8 +13,10 @@ public class SolariumOre extends OreBlock {
 	public SolariumOre() {
 		super(Block.Properties.create(Material.ROCK)
 				.hardnessAndResistance(3.0F)
-				.harvestTool(ToolType.PICKAXE)
 				.harvestLevel(HarvestLevel.IRON.getHarvestLevel())
+				.harvestTool(ToolType.PICKAXE)
+				.setLightLevel((value) -> 15)
+				.setRequiresTool()
 				.sound(SoundType.STONE));
 	}
 
