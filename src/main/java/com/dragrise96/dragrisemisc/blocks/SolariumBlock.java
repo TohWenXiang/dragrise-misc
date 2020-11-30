@@ -14,6 +14,7 @@ public class SolariumBlock extends Block {
 				.hardnessAndResistance(5.0F, 6.0F)
 				.harvestLevel(HarvestLevel.IRON.getHarvestLevel())
 				.harvestTool(ToolType.PICKAXE)
+				.setRequiresTool()
 				.sound(SoundType.METAL));
 	}
 
