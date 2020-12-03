@@ -3,8 +3,9 @@ package com.dragrise96.dragrisemisc;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.dragrise96.dragrisemisc.registries.BlockRegistry;
+import com.dragrise96.dragrisemisc.registries.RegistryHandler;
 import com.dragrise96.dragrisemisc.util.ModInfo;
-import com.dragrise96.dragrisemisc.util.RegistryHandler;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.color.BlockColors;
@@ -24,9 +25,10 @@ public class DragriseMisc {
 
 	public DragriseMisc() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-		RegistryHandler.init();
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+		RegistryHandler.init();
+		
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -39,7 +41,7 @@ public class DragriseMisc {
 		
 		blockColors.register((blockState, lightReader, blockPos, tintIndex) -> {
 			return BiomeColors.getFoliageColor(lightReader, blockPos);
-		}, RegistryHandler.CYPRESS_LEAF_BLOCK.get());
+		}, BlockRegistry.CYPRESS_LEAF_BLOCK.get());
 		
 		//To Do: fix item colors
 //		ItemColors itemColors = Minecraft.getInstance().getItemColors();
