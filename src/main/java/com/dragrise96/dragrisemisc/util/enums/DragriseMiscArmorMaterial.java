@@ -1,9 +1,9 @@
-package com.dragrise96.dragrisemisc.armor;
+package com.dragrise96.dragrisemisc.util.enums;
 
 import java.util.function.Supplier;
 
+import com.dragrise96.dragrisemisc.registries.ItemRegistry;
 import com.dragrise96.dragrisemisc.util.ModInfo;
-import com.dragrise96.dragrisemisc.util.RegistryHandler;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -17,7 +17,7 @@ public enum DragriseMiscArmorMaterial implements IArmorMaterial {
 
 	SOLARIUM(ModInfo.MOD_ID + ":solarium", 20, new int[] { 2, 5, 6, 2 }, 18, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
 			() -> {
-				return Ingredient.fromItems(RegistryHandler.SOLARIUM_INGOT.get());
+				return Ingredient.fromItems(ItemRegistry.SOLARIUM_INGOT.get());
 			}, 1);
 
 	private static final int[] MAX_DAMAGE_ARRAY = new int[] { 11, 16, 15, 13 };

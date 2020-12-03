@@ -1,6 +1,6 @@
 package com.dragrise96.dragrisemisc.blocks;
 
-import com.dragrise96.dragrisemisc.util.HarvestLevel;
+import com.dragrise96.dragrisemisc.util.enums.HarvestLevel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

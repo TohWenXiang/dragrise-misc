@@ -1,4 +1,4 @@
-package com.dragrise96.dragrisemisc.util;
+package com.dragrise96.dragrisemisc.util.enums;
 
 public enum HarvestLevel {
 
