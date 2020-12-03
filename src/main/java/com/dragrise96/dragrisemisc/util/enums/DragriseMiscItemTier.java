@@ -1,8 +1,9 @@
-package com.dragrise96.dragrisemisc.tools;
+package com.dragrise96.dragrisemisc.util.enums;
 
 import java.util.function.Supplier;
 
-import com.dragrise96.dragrisemisc.util.RegistryHandler;
+import com.dragrise96.dragrisemisc.registries.BlockRegistry;
+import com.dragrise96.dragrisemisc.registries.ItemRegistry;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
@@ -10,10 +11,10 @@ import net.minecraft.item.crafting.Ingredient;
 public enum DragriseMiscItemTier implements IItemTier {
 
 	CYPRESS(0, 59, 2.0F, 0.0F, 20, () -> {
-		return Ingredient.fromItems(RegistryHandler.CYPRESS_PLANK_BLOCK.get());
+		return Ingredient.fromItems(BlockRegistry.CYPRESS_PLANK_BLOCK.get());
 	}),
 	SOLARIUM(2, 250, 6.0F, 2.0F, 16, () -> {
-		return Ingredient.fromItems(RegistryHandler.SOLARIUM_INGOT.get());
+		return Ingredient.fromItems(ItemRegistry.SOLARIUM_INGOT.get());
 	});
 
 	private final int harvestLevel;
